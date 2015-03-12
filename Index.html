@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>ProvaCSS</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     </head>
     <body>
-        <h1>ProvaDue_modificato</h1>
-        <div>TODO write content</div>
+        <h1>Esempio input form</h1>
+        <form action=input-form.php">
+            <label for="user">User</label>
+            <input type="text" name="user" id="user"/>
+            <br/>
+            <label for="psw">Password</label>
+            <input type="password" name="psw" id="psw"/>
+            <br/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br/>
+            <h3>sesso</h3>
+            <br/>
+            <label for="maschio">Maschio</label>
+            <input type="radio" id="maschio" name="sesso" value="Maschio"/>
+            <label for="femmina">Femmina</label>
+            <input type="radio" id="femmina" name="sesso" value="Femmina"/>
+            
+            <br/>
+            
+            <h3>Categorie</h3>
+            
+            <label for="Arte">Arte</label>
+            <input type="checkbox" name="cat" id="Arte" value="Arte"/>
+            <label for="Musica">Musica</label>
+            <input type="checkbox" name="cat" id="Musica" value="Musica"/>
+            <label for="Sport">Sport</label>
+            <input type="checkbox" name="cat" id="Sport" value="Sport"/>
+            <br/>
+            <br/>
+            
+            <label for="desc">Inserire una descrizione</label>
+            <textarea name="desc" id="desc" value="Inserire un testo lungo" rows="2" cols="40">Inserire testo lungo</textarea>
+            
+            <br/>
+            <label for="città">Selezione Citta'</label>
+            <select name="città" size="3" multiple>
+                <option value="CA">Cagliari</option>
+                <option value="SS">Sassari</option>
+                <option value="NU"> Nuoro</option>
+                <option value="OR">Oristano</option>
+                <option value="OG">Ogliastra</option>
+                <option value="OT">Olbia</option>
+                <option value="BO">Bologna</option>
+                
+            </select>
+            <br/>
+            <button>ok</button>
+        </form>        
     </body>
 </html>
